@@ -219,7 +219,7 @@ body {
           padding: 2px;
         }
 
-        &[data-active] {
+        &.card_vars_item--active {
           display: inline-flex;
           align-items: center;
           gap: 8px;
