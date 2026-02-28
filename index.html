@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+  </head>
+  <body>
+    <template id="slide">
+      <li class="splide__slide">
+        <a href="assets/slide.png" data-fancybox>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.2 11.1C19.2 11.3387 19.2948 11.5676 19.4636 11.7364C19.6324 11.9052 19.8613 12 20.1 12C20.3387 12 20.5676 11.9052 20.7364 11.7364C20.9052 11.5676 21 11.3387 21 11.1V3.9C21 3.66131 20.9052 3.43239 20.7364 3.2636C20.5676 3.09482 20.3387 3 20.1 3H12.9C12.6613 3 12.4324 3.09482 12.2636 3.2636C12.0948 3.43239 12 3.66131 12 3.9C12 4.13869 12.0948 4.36761 12.2636 4.5364C12.4324 4.70518 12.6613 4.8 12.9 4.8H19.2V11.1ZM4.8 12.9C4.8 12.6613 4.70518 12.4324 4.5364 12.2636C4.36761 12.0948 4.13869 12 3.9 12C3.66131 12 3.43239 12.0948 3.2636 12.2636C3.09482 12.4324 3 12.6613 3 12.9V20.1C3 20.3387 3.09482 20.5676 3.2636 20.7364C3.43239 20.9052 3.66131 21 3.9 21H11.1C11.3387 21 11.5676 20.9052 11.7364 20.7364C11.9052 20.5676 12 20.3387 12 20.1C12 19.8613 11.9052 19.6324 11.7364 19.4636C11.5676 19.2948 11.3387 19.2 11.1 19.2H4.8V12.9Z"
+              fill="#464646"
+            />
+          </svg>
+        </a>
+        <img src="assets/slide.png" alt="slide" />
+      </li>
+    </template>
+
+    <template id="card">
+      <article class="card">
+        <section class="splide">
+          <div class="splide__track">
+            <ul class="splide__list"></ul>
+          </div>
+          <div class="card_description">
+            <span>Описание товара</span>
+          </div>
+        </section>
+        <section class="card_meta">
+          <div class="card_info">
+            <span class="card_label label">Артикул — 4607</span>
+            <h4 class="card_title">Угловая бежевая кухня на заказ с матовыми фасадами в современном стиле «Нарцисс»</h4>
+          </div>
+          <div class="card_vars">
+            <span class="card_vars_label label">Варианты материалов</span>
+            <ul class="card_vars_list">
+              <li class="card_vars_item" data-active>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.0578 3.10889C12.1809 3.23213 12.25 3.3992 12.25 3.57339C12.25 3.74758 12.1809 3.91464 12.0578 4.03789L5.70378 10.3919C5.58053 10.515 5.41346 10.5841 5.23928 10.5841C5.06509 10.5841 4.89802 10.515 4.77478 10.3919L1.92642 7.54356C1.81031 7.41895 1.7471 7.25415 1.7501 7.08385C1.75311 6.91357 1.82209 6.7511 1.94253 6.63066C2.06296 6.51023 2.22544 6.44125 2.39572 6.43824C2.56601 6.43523 2.73081 6.49845 2.85542 6.61456L5.23928 8.99841L11.1288 3.10889C11.252 2.9858 11.4191 2.91666 11.5933 2.91666C11.7674 2.91666 11.9346 2.9858 12.0578 3.10889Z"
+                    fill="#32312F"
+                  />
+                </svg>
+                <span>ПВХ</span>
+              </li>
+              <li class="card_vars_item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.0578 3.10889C12.1809 3.23213 12.25 3.3992 12.25 3.57339C12.25 3.74758 12.1809 3.91464 12.0578 4.03789L5.70378 10.3919C5.58053 10.515 5.41346 10.5841 5.23928 10.5841C5.06509 10.5841 4.89802 10.515 4.77478 10.3919L1.92642 7.54356C1.81031 7.41895 1.7471 7.25415 1.7501 7.08385C1.75311 6.91357 1.82209 6.7511 1.94253 6.63066C2.06296 6.51023 2.22544 6.44125 2.39572 6.43824C2.56601 6.43523 2.73081 6.49845 2.85542 6.61456L5.23928 8.99841L11.1288 3.10889C11.252 2.9858 11.4191 2.91666 11.5933 2.91666C11.7674 2.91666 11.9346 2.9858 12.0578 3.10889Z"
+                    fill="#32312F"
+                  />
+                </svg>
+                <span>Эмаль</span>
+              </li>
+              <li class="card_vars_item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.0578 3.10889C12.1809 3.23213 12.25 3.3992 12.25 3.57339C12.25 3.74758 12.1809 3.91464 12.0578 4.03789L5.70378 10.3919C5.58053 10.515 5.41346 10.5841 5.23928 10.5841C5.06509 10.5841 4.89802 10.515 4.77478 10.3919L1.92642 7.54356C1.81031 7.41895 1.7471 7.25415 1.7501 7.08385C1.75311 6.91357 1.82209 6.7511 1.94253 6.63066C2.06296 6.51023 2.22544 6.44125 2.39572 6.43824C2.56601 6.43523 2.73081 6.49845 2.85542 6.61456L5.23928 8.99841L11.1288 3.10889C11.252 2.9858 11.4191 2.91666 11.5933 2.91666C11.7674 2.91666 11.9346 2.9858 12.0578 3.10889Z"
+                    fill="#32312F"
+                  />
+                </svg>
+                <span>Пластик</span>
+              </li>
+              <li class="card_vars_item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.0578 3.10889C12.1809 3.23213 12.25 3.3992 12.25 3.57339C12.25 3.74758 12.1809 3.91464 12.0578 4.03789L5.70378 10.3919C5.58053 10.515 5.41346 10.5841 5.23928 10.5841C5.06509 10.5841 4.89802 10.515 4.77478 10.3919L1.92642 7.54356C1.81031 7.41895 1.7471 7.25415 1.7501 7.08385C1.75311 6.91357 1.82209 6.7511 1.94253 6.63066C2.06296 6.51023 2.22544 6.44125 2.39572 6.43824C2.56601 6.43523 2.73081 6.49845 2.85542 6.61456L5.23928 8.99841L11.1288 3.10889C11.252 2.9858 11.4191 2.91666 11.5933 2.91666C11.7674 2.91666 11.9346 2.9858 12.0578 3.10889Z"
+                    fill="#32312F"
+                  />
+                </svg>
+                <span>Массив</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card_price">
+            <div class="card_price_meta">
+              <span class="card_price_label label">Цена от</span>
+              <h4 class="card_price_value">515 700 ₽</h4>
+              <span class="card_price_info">Погонный метр от — <strong>30 000 ₽</strong></span>
+            </div>
+            <button class="card_price_target btn">Заказать</button>
+          </div>
+          <div class="card_actions">
+            <button class="card_actions_like">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.9411 5.10325C17.0869 4.17687 15.9149 3.66666 14.6407 3.66666C13.6883 3.66666 12.816 3.96778 12.0481 4.56159C11.6606 4.86129 11.3095 5.22803 11 5.656C10.6906 5.22813 10.3394 4.86129 9.95177 4.56159C9.18397 3.96778 8.31172 3.66666 7.35927 3.66666C6.08506 3.66666 4.91295 4.17687 4.05882 5.10325C3.2149 6.01881 2.75 7.26962 2.75 8.62539C2.75 10.0208 3.27004 11.2982 4.3865 12.6454C5.38526 13.8505 6.82073 15.0739 8.48304 16.4904C9.05068 16.9742 9.69408 17.5226 10.3621 18.1067C10.5387 18.2613 10.7653 18.3465 11 18.3464C11.2348 18.3464 11.4614 18.2613 11.6376 18.1069C12.3057 17.5227 12.9494 16.9741 13.5173 16.4901C15.1794 15.0737 16.6148 13.8505 17.6136 12.6453C18.7301 11.2982 19.25 10.0208 19.25 8.62526C19.25 7.26962 18.7851 6.01881 17.9411 5.10325Z"
+                  fill="#A1A5AD"
+                />
+              </svg>
+              <span>57</span>
+            </button>
+            <a class="card_actions_calc" href="/calc" target="_blank">Рассчитать стоимость</a>
+          </div>
+        </section>
+      </article>
+    </template>
+
+    <main class="container"></main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      var elms = document.getElementsByClassName("splide");
+      Splide.defaults = {
+        rewind: true,
+        breakpoints: {
+          1200: {
+            type: "loop",
+            autoplay: true,
+            interval: 3000,
+            arrows: false,
+          },
+        },
+      };
+
+      for (var i = 0; i < elms.length; i++) {
+        var splide = new Splide(elms[i]);
+
+        splide.mount();
+      }
+    </script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+  </body>
+</html>
