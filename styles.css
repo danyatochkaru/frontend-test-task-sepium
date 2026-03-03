@@ -23,7 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 
-  min-width: 512px;
+  min-width: 360px;
 
   margin: 0;
   padding: 0;
@@ -86,11 +86,12 @@ body {
       .splide__arrow {
         opacity: 0.5;
         background: #fff;
-        width: 44px;
-        height: 44px;
+        width: 43px;
+        height: 43px;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         transition: opacity var(--duration) var(--timing-fn);
+        transform: translate(0, -24px);
       }
     }
 
@@ -109,7 +110,7 @@ body {
             align-items: center;
             justify-content: center;
             width: 32px;
-            height: 32px;
+            height: 34px;
             background-color: #fff8;
             backdrop-filter: blur(5px);
             border-radius: 8px;
@@ -213,10 +214,16 @@ body {
         background-color: var(--color-grayscale-100);
         padding: 6px 12px;
         border-radius: 18px;
+        border: none;
+        cursor: pointer;
 
         svg {
           display: none;
           padding: 2px;
+          background-color: var(--color-grayscale-0);
+          border-radius: 10px;
+          width: 18px;
+          height: 18px;
         }
 
         &.card_vars_item--active {
@@ -230,10 +237,6 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--color-grayscale-0);
-            border-radius: 10px;
-            width: 18px;
-            height: 18px;
           }
         }
       }
@@ -299,6 +302,7 @@ body {
     }
 
     .card_actions_like {
+      cursor: pointer;
       background-color: var(--color-grayscale-100);
       font-size: 14px;
       line-height: 1.5;
@@ -308,6 +312,20 @@ body {
       display: flex;
       align-items: center;
       gap: 5px;
+
+      svg path {
+        transition: fill var(--duration) var(--timing-fn);
+      }
+
+      span {
+        padding-bottom: 1px;
+      }
+
+      &.card_actions_like--active {
+        svg path {
+          fill: var(--color-orange-200);
+        }
+      }
     }
 
     .card_actions_calc {
@@ -347,6 +365,10 @@ body {
 
       .card_meta .card_price .card_price_target {
         opacity: 1;
+
+        &:hover {
+          opacity: 0.9;
+        }
       }
     }
   }
