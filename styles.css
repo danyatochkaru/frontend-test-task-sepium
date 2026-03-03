@@ -40,12 +40,12 @@ body {
   width: fit-content;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  padding-block: 40px;
+  padding: 40px 12px;
 
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -54,6 +54,10 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
 }
 
 .btn {
@@ -68,12 +72,18 @@ body {
   border-radius: 14px;
   padding: 16px 30px;
   cursor: pointer;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 12px 26px;
+  }
 }
 
 .card {
   background-color: var(--color-grayscale-100);
   border-radius: 8px;
-  width: 508px;
+  width: 100%;
+  max-width: 508px;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
   transition: var(--duration) var(--timing-fn);
@@ -100,6 +110,11 @@ body {
         .splide__slide {
           position: relative;
 
+          img {
+            width: 100%;
+            object-position: center;
+          }
+
           a {
             position: absolute;
             top: 10px;
@@ -121,6 +136,10 @@ body {
             text-decoration: none;
             transition: var(--duration) var(--timing-fn);
             transition-property: background-color, color;
+
+            @media (max-width: 1024px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -194,6 +213,10 @@ body {
         text-overflow: ellipsis;
         white-space: nowrap;
       }
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
     }
 
     .card_vars {
@@ -239,6 +262,10 @@ body {
             justify-content: center;
           }
         }
+
+        @media (max-width: 1024px) {
+          font-size: 12px;
+        }
       }
     }
 
@@ -252,6 +279,10 @@ body {
           line-height: 1.2;
           font-weight: 600;
           margin: 4px 0;
+
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
         }
 
         .card_price_info {
@@ -263,6 +294,10 @@ body {
           strong {
             color: var(--color-grayscale-600);
           }
+
+          @media (max-width: 1024px) {
+            font-size: 12px;
+          }
         }
       }
 
@@ -270,11 +305,24 @@ body {
         height: 56px;
         margin-top: auto;
         transition: opacity var(--duration) var(--timing-fn);
+        opacity: 0;
 
-        @media (min-width: 1200px) {
-          opacity: 0;
+        @media (max-width: 1024px) {
+          opacity: 1;
+          height: 100%;
         }
       }
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      gap: 16px;
+      margin-top: 16px;
+      padding: 0 16px 16px;
     }
   }
 
@@ -326,6 +374,14 @@ body {
           fill: var(--color-orange-200);
         }
       }
+
+      @media (max-width: 1024px) {
+        font-size: 12px;
+
+        span {
+          padding: 1px 0 0;
+        }
+      }
     }
 
     .card_actions_calc {
@@ -349,6 +405,10 @@ body {
 
       &:hover {
         color: var(--color-grayscale-600);
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 13px;
       }
     }
   }
